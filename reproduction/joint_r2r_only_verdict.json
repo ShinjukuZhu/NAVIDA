@@ -1,0 +1,39 @@
+{
+  "verified_unix": 1794338774.7709215,
+  "scope": "joint_training_and_r2r_only",
+  "train_samples": 817098,
+  "epoch": 1.0,
+  "final_step": 12768,
+  "final_checkpoint": {
+    "global_step": 12768,
+    "epoch": 1.0,
+    "world_size": 2,
+    "optimizer_files": [
+      "bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt",
+      "bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt"
+    ],
+    "rng_files": [
+      "rng_state_1.pth",
+      "rng_state_0.pth"
+    ],
+    "total_bytes": 68726485342,
+    "checked_unix": 1794323419.0507326,
+    "model_optimizer_scheduler_rng_and_trainer_state": true
+  },
+  "r2r": {
+    "n": 1839,
+    "exact_id_coverage": true,
+    "finite_metrics": true,
+    "successes": 946,
+    "sr_percent": 51.44100054377378,
+    "spl_percent": 46.462942838257284,
+    "reference_sr_percent": 47.7,
+    "reference_spl_percent": 41.5,
+    "sr_delta_points": 3.7410005437737794,
+    "spl_delta_points": 4.962942838257284
+  },
+  "rxr": "cancelled_by_user_not_evaluated",
+  "task_gpu_services_stopped": true,
+  "renaming": "deferred_by_user",
+  "protocol": "Qwen3-VL-4B migration; R2R+official RxR training; 3chunk/noentropy, seed41, greedy, history200,max128,FA2; paper Table3 reference"
+}
